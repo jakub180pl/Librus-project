@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfLibrusProject.Windows.UpdateStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="UpdateStudentWindow" Height="305" Width="800">
+    <Grid>
+        <Border BorderBrush="#CCCCCC" BorderThickness="1" CornerRadius="10" Margin="10">
+            <StackPanel Margin="10" Orientation="Vertical">
+                <TextBlock Text="Update mode" FontWeight="Bold" Margin="5" />
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Name" FontStyle="Italic" Foreground="LightGray" />
+                    <TextBox x:Name="NameTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Surname" FontStyle="Italic" Foreground="LightGray" />
+                    <TextBox x:Name="SurnameTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Address" FontStyle="Italic" Foreground="LightGray" />
+                    <TextBox x:Name="AddressTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <Button Content="Update Student" Click="UpdateStudentButton_Click" Width="120" Margin="5" Background="#2196F3" Foreground="White" BorderBrush="#CCCCCC" BorderThickness="1" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
